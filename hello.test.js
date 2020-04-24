@@ -1,5 +1,8 @@
 const hello = require('./hello');
 
-test('outputs the correct string', () => {
-  expect(hello()).toBe("Hello world!");
+test('Output Test', () => {
+  function callback(data){
+    expect(data).toBe("12 34 56");
+  }
+  hello(callback);
 });
